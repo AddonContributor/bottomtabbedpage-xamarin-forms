@@ -49,11 +49,10 @@ namespace Naxam.Demo.Droid
 			//BottomTabbedRenderer.ItemPadding = new Xamarin.Forms.Thickness(6);
 			BottomTabbedRenderer.BottomBarHeight = 56;
 			BottomTabbedRenderer.ItemAlign = ItemAlignFlags.Center;
-			BottomTabbedRenderer.MenuItemIconSetter = (menuItem, iconSource, selected) => {
+			/*BottomTabbedRenderer.MenuItemIconSetter = (menuItem, iconSource, selected) => {
                 var resId = Resources.GetIdentifier(iconSource.File, "drawable", PackageName);
-
                 menuItem.SetIcon(resId);
-			};
+			};*/
         }
     }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Naxam.Demo.Tab4Page"
+    Title="Tab 4"
+    Icon="ic_favorite_black_24dp"
+    BackgroundColor="Bisque">
+    <ContentPage.Content>
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="DarkGreen" Margin="16">
+            <Label.Text>
+                "BottomTabbedPage is a product developed by NAXAM"
+            </Label.Text>
+        </Label>
+    </ContentPage.Content>
+</ContentPage>
