@@ -157,10 +157,6 @@
       <Project>{60aa62d7-8c05-44b5-85ee-95dd36a6c43a}</Project>
       <Name>BottomTabbedPage.Platform.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BottomTabbedPage\BottomTabbedPage.Forms.csproj">
-      <Project>{b3f20a5f-fb43-4825-bd57-e1b7976020f8}</Project>
-      <Name>BottomTabbedPage.Forms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Demo\Demo.csproj">
       <Project>{DEFB4EE7-1350-4DDC-BE1C-2F6BBAD93527}</Project>
       <Name>Demo</Name>

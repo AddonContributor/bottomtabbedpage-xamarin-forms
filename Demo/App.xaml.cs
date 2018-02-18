@@ -8,11 +8,9 @@
 
 using System;
 using System.Linq;
-using Naxam.Controls.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Naxam.Demo
 {
     public partial class App : Application
