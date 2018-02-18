@@ -1,4 +1,13 @@
 ﻿using System;
+﻿/*
+* Complying with Apache Licence Version 2.0 that the original version of this 
+* has been distributed I declare herewith that this file has been modified by
+* me, Marc Lohrer.
+* 
+* The change added a new class called BottomTabbedConfiguration that is used to 
+* configure how the BottomTabbedRenderer renders the buttons of the TabbedPage.
+*/
+
 using Android.Widget;
 using Android.Views;
 using Xamarin.Forms;

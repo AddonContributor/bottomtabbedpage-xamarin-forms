@@ -1,4 +1,12 @@
 ﻿using Android.Content.Res;
+﻿/*
+* Complying with Apache Licence Version 2.0 that the original version of this 
+* has been distributed I declare herewith that this file has been modified by
+* me, Marc Lohrer.
+* 
+* The change largely affects how the parameters of function SetupTabItems in class SizeUtils are passed along.
+*/
+
 using Android.Graphics;
 using Android.Views;
 using Com.Ittianyu.Bottomnavigationviewex;
