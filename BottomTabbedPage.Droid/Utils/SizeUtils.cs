@@ -1,5 +1,4 @@
-﻿using System;
-﻿/*
+﻿﻿/*
 * Complying with Apache Licence Version 2.0 that the original version of this 
 * has been distributed I declare herewith that this file has been modified by
 * me, Marc Lohrer.
@@ -15,8 +14,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Com.Ittianyu.Bottomnavigationviewex;
 using Android.Support.Design.Internal;
+using Naxam.Controls.Droid;
 
-namespace Naxam.Controls.Platform.Droid.Utils
+namespace Naxam.Controls.Droid
 {
     using RelativeLayout = Android.Widget.RelativeLayout;
     using Platform = Xamarin.Forms.Platform.Android.Platform;

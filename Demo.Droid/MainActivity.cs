@@ -4,13 +4,15 @@
 * me, Marc Lohrer.
 * 
 * The change largely affects the value of the properties of class BottomTabbedRenderer.
+* 
+* I removed a comment.
 */
 
 using Android.App;
 using Android.Content.PM;
 using Android.Graphics;
 using Android.OS;
-using Naxam.Controls.Platform.Droid;
+using Naxam.Controls.Droid;
 
 namespace Naxam.Demo.Droid
 {

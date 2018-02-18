@@ -1,9 +1,17 @@
-﻿using System;
+﻿/*
+* Complying with Apache Licence Version 2.0 that the original version of this 
+* has been distributed I declare herewith that this file has been modified by
+* me, Marc Lohrer.
+* 
+* I changed the namespace.
+*/
+
+using System;
 using System.Linq;
 using System.IO;
 using System.Reflection;
 
-namespace Naxam.Controls.Platform.Droid.Utils
+namespace Naxam.Controls.Droid
 {
     internal static class ResourceManagerEx
     {
@@ -11,7 +19,7 @@ namespace Naxam.Controls.Platform.Droid.Utils
         {
             string name = Path.GetFileNameWithoutExtension(title);
             int id = GetId(type, name);
-            return id; // Resources.System.GetDrawable (Resource.Drawable.dashboard);
+            return id; 
         }
 
         static int GetId(Type type, string propertyName)

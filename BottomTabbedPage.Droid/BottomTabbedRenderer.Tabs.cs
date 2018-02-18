@@ -5,15 +5,17 @@
 * me, Marc Lohrer.
 * 
 * The change largely affects how the parameters of function SetupTabItems in class SizeUtils are passed along.
+* 
+* I changed the namespace.
 */
 
 using Android.Graphics;
 using Android.Views;
 using Com.Ittianyu.Bottomnavigationviewex;
-using Naxam.Controls.Platform.Droid.Utils;
+using Naxam.Controls.Droid;
 using Xamarin.Forms;
 
-namespace Naxam.Controls.Platform.Droid
+namespace Naxam.Controls.Droid
 {
     public partial class BottomTabbedRenderer : BottomNavigationViewEx.IOnNavigationItemSelectedListener
     {

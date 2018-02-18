@@ -1,6 +1,14 @@
-﻿using Android.Views;
+﻿/*
+* Complying with Apache Licence Version 2.0 that the original version of this 
+* has been distributed I declare herewith that this file has been modified by
+* me, Marc Lohrer.
+* 
+* I changed the namespace.
+*/
 
-namespace Naxam.Controls.Platform.Droid.Utils
+using Android.Views;
+
+namespace Naxam.Controls.Droid
 {
     internal static class MeasureSpecFactory
     {

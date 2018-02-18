@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Naxam.Demo
 {
-    public partial class BottomTabs: BottomTabbedPage
+    public partial class BottomTabbedPage: TabbedPage
     {
-        public BottomTabs()
+        public BottomTabbedPage()
         {
             InitializeComponent();
         }

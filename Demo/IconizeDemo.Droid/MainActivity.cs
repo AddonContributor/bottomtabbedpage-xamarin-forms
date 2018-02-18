@@ -3,7 +3,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Graphics;
 using Android.OS;
-using Naxam.Controls.Platform.Droid;
+using Naxam.Controls.Droid;
 using Naxam.Demo;
 using Plugin.Iconize;
 using Plugin.Iconize.Droid.Controls;
@@ -27,7 +27,6 @@ namespace Naxam.IconizeDemo.Droid
             Plugin.Iconize.Iconize
                   .With(new Plugin.Iconize.Fonts.FontAwesomeModule());
 
-            //Plugin.Iconize.Iconize.Init(Resource.Id.Toolbar, Resource.Id.Tabbar);
             LoadApplication(new App());
         }
 

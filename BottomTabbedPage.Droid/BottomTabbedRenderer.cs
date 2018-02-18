@@ -1,26 +1,27 @@
-﻿using System;
-﻿/*
+﻿﻿/*
 * Complying with Apache Licence Version 2.0 that the original version of this 
 * has been distributed I declare herewith that this file has been modified by
 * me, Marc Lohrer.
 * 
 * The change added a new class called BottomTabbedConfiguration that is used to 
 * configure how the BottomTabbedRenderer renders the buttons of the TabbedPage.
+* 
+* I changed the base class from BottomTabbedPage to TabbedPage.
 */
-
+using System;
 using Android.Widget;
 using Android.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using Naxam.Controls.Platform.Droid;
+using Naxam.Controls.Droid;
 using System.ComponentModel;
 using Com.Ittianyu.Bottomnavigationviewex;
-using Naxam.Controls.Forms;
-using Naxam.Controls.Platform.Droid.Utils;
+using Naxam.Controls;
 using Android.Support.Design.Internal;
+using Xamarin.Forms.Platform.Android.AppCompat;
 
-[assembly: ExportRenderer(typeof(BottomTabbedPage), typeof(BottomTabbedRenderer))]
-namespace Naxam.Controls.Platform.Droid
+[assembly: ExportRenderer(typeof(Naxam.Demo.BottomTabbedPage), typeof(Naxam.Controls.Droid.BottomTabbedRenderer))]
+namespace Naxam.Controls.Droid
 {
     using RelativeLayout = Android.Widget.RelativeLayout;
     using Platform = Xamarin.Forms.Platform.Android.Platform;
@@ -41,7 +42,7 @@ namespace Naxam.Controls.Platform.Droid
         }
     }
 
-    public partial class BottomTabbedRenderer : VisualElementRenderer<BottomTabbedPage>
+    public partial class BottomTabbedRenderer : VisualElementRenderer<TabbedPage>
 	{
         public static readonly Action<IMenuItem, FileImageSource, bool> DefaultMenuItemIconSetter = (menuItem, icon, selected) =>
 		{
@@ -69,7 +70,7 @@ namespace Naxam.Controls.Platform.Droid
             barId = GenerateViewId();
         }
 
-        protected override void OnElementChanged(ElementChangedEventArgs<BottomTabbedPage> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<TabbedPage> e)
         {
             base.OnElementChanged(e);
 
