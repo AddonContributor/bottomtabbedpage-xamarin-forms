@@ -16,6 +16,22 @@ namespace Naxam.Controls.Platform.Droid
     using RelativeLayout = Android.Widget.RelativeLayout;
     using Platform = Xamarin.Forms.Platform.Android.Platform;
 
+    public class BottomTabbedConfiguration
+    {
+        private readonly bool tabItemTextVisible;
+        private readonly bool tabShiftingModeEnabled;
+        private readonly bool tabItemShiftingModeEnabled;
+        private readonly bool tabAnimationEnabled;
+
+        public BottomTabbedConfiguration(bool tabItemTextVisible, bool tabShiftingModeEnabled, bool tabItemShiftingModeEnabled, bool tabAnimationEnabled)
+        {
+            this.tabItemTextVisible = tabItemTextVisible;
+            this.tabShiftingModeEnabled = tabShiftingModeEnabled;
+            this.tabItemShiftingModeEnabled = tabItemShiftingModeEnabled;
+            this.tabAnimationEnabled = tabAnimationEnabled;
+        }
+    }
+
     public partial class BottomTabbedRenderer : VisualElementRenderer<BottomTabbedPage>
 	{
         public static readonly Action<IMenuItem, FileImageSource, bool> DefaultMenuItemIconSetter = (menuItem, icon, selected) =>

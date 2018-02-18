@@ -39,20 +39,20 @@ namespace Naxam.Demo.Droid
                 });
 
 			BottomTabbedRenderer.BackgroundColor = new Color(0x9C, 0x27, 0xB0);
-			BottomTabbedRenderer.FontSize = 12f;
-			BottomTabbedRenderer.IconSize = 16;
+			BottomTabbedRenderer.FontSize = 0f;
+			BottomTabbedRenderer.IconSize = 46;
 			BottomTabbedRenderer.ItemTextColor = stateList;
 			BottomTabbedRenderer.ItemIconTintList = stateList;
-			BottomTabbedRenderer.Typeface = Typeface.CreateFromAsset(this.Assets, "architep.ttf");
+			//BottomTabbedRenderer.Typeface = Typeface.CreateFromAsset(this.Assets, "architep.ttf");
 			BottomTabbedRenderer.ItemBackgroundResource = Resource.Drawable.bnv_selector;
 			BottomTabbedRenderer.ItemSpacing = 4;
-			//BottomTabbedRenderer.ItemPadding = new Xamarin.Forms.Thickness(6);
+			//BottomTabbedRenderer.ItemPadding = new Xamarin.Forms.Thickness(5);
 			BottomTabbedRenderer.BottomBarHeight = 56;
 			BottomTabbedRenderer.ItemAlign = ItemAlignFlags.Center;
-			/*BottomTabbedRenderer.MenuItemIconSetter = (menuItem, iconSource, selected) => {
+			BottomTabbedRenderer.MenuItemIconSetter = (menuItem, iconSource, selected) => {
                 var resId = Resources.GetIdentifier(iconSource.File, "drawable", PackageName);
                 menuItem.SetIcon(resId);
-			};*/
+			};
         }
     }
 }

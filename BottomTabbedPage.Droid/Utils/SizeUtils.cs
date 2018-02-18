@@ -180,7 +180,7 @@ namespace Naxam.Controls.Platform.Droid.Utils
             }
         }
 
-        public static void SetupTabItems(this BottomTabbedRenderer renderer, BottomNavigationViewEx bottomNav)
+        public static void SetupTabItems(this BottomTabbedRenderer renderer, BottomNavigationViewEx bottomNav, BottomTabbedConfiguration bottomTabbedConfiguration)
         {
             var Element = renderer.Element;
             var menu = (BottomNavigationMenu)bottomNav.Menu;

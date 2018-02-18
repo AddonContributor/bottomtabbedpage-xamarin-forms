@@ -1,13 +1,9 @@
-﻿using System;
-using Android.Content.Res;
+﻿using Android.Content.Res;
 using Android.Graphics;
-using Android.Support.Design.Internal;
 using Android.Views;
 using Com.Ittianyu.Bottomnavigationviewex;
 using Naxam.Controls.Platform.Droid.Utils;
-using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
-using Android.Widget;
 
 namespace Naxam.Controls.Platform.Droid
 {
@@ -32,7 +28,15 @@ namespace Naxam.Controls.Platform.Droid
 
         internal void SetupTabItems()
         {
-            this.SetupTabItems(bottomNav);
+            var tabItemTextVisible = false;
+            var tabShiftingModeEnabled = false;
+            var tabItemShiftingModeEnabled = false;
+            var tabAnimationEnabled = true;
+            this.SetupTabItems(bottomNav, new BottomTabbedConfiguration(
+                tabItemTextVisible,
+                tabShiftingModeEnabled,
+                tabItemShiftingModeEnabled,
+                tabAnimationEnabled));
         }
 
         internal void SetupBottomBar()
