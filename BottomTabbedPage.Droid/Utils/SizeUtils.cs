@@ -1,4 +1,13 @@
 ﻿using System;
+﻿/*
+* Complying with Apache Licence Version 2.0 that the original version of this 
+* has been distributed I declare herewith that this file has been modified by
+* me, Marc Lohrer.
+* 
+* The change largely the way the function SetupTabItems is being called.
+*/
+
+using System;
 using Android.Content;
 using Android.Views;
 using Android.Widget;
