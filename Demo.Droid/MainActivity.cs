@@ -6,6 +6,7 @@
 * The change largely affects the value of the properties of class BottomTabbedRenderer.
 * 
 * I removed a comment.
+* I removed the command that changed the value of properties BackgroundColor, FontSize, IconSize, ItemSpacing, BottomBarHeight
 */
 
 using Android.App;
@@ -47,16 +48,11 @@ namespace Naxam.Demo.Droid
                     Color.White //Normal
                 });
 
-			BottomTabbedRenderer.BackgroundColor = new Color(0x9C, 0x27, 0xB0);
-			BottomTabbedRenderer.FontSize = 0f;
-			BottomTabbedRenderer.IconSize = 46;
 			BottomTabbedRenderer.ItemTextColor = stateList;
 			BottomTabbedRenderer.ItemIconTintList = stateList;
 			//BottomTabbedRenderer.Typeface = Typeface.CreateFromAsset(this.Assets, "architep.ttf");
 			BottomTabbedRenderer.ItemBackgroundResource = Resource.Drawable.bnv_selector;
-			BottomTabbedRenderer.ItemSpacing = 4;
 			//BottomTabbedRenderer.ItemPadding = new Xamarin.Forms.Thickness(5);
-			BottomTabbedRenderer.BottomBarHeight = 56;
 			BottomTabbedRenderer.ItemAlign = ItemAlignFlags.Center;
 			BottomTabbedRenderer.MenuItemIconSetter = (menuItem, iconSource, selected) => {
                 var resId = Resources.GetIdentifier(iconSource.File, "drawable", PackageName);

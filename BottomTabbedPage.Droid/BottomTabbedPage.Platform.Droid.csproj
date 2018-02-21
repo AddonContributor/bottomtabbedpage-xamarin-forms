@@ -116,6 +116,7 @@
     <Compile Include="Utils\MeasureSpecFactory.cs" />
     <Compile Include="Utils\ResourceManagerEx.cs" />
     <Compile Include="Utils\SizeUtils.cs" />
+    <Compile Include="TabbedPage.Properties.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

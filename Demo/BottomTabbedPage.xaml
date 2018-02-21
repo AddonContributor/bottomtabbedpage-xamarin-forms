@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Complying with Apache Licence Version 2.0 that the original version of this has been distributed I declare herewith that this file-->
+<!--has been modified by me, Marc Lohrer: I added the setting of BackgroundColor, FontSize, IconSize, ItemSpacing, BottomBarHeight for Android.-->
 <TabbedPage 
     xmlns="http://xamarin.com/schemas/2014/forms"  
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Naxam.Demo"
-    x:Class="Naxam.Demo.BottomTabbedPage">
+    x:Class="Naxam.Demo.BottomTabbedPage"
+    xmlns:droid="clr-namespace:Naxam.Controls.Platform.Droid;assembly=Naxam.BottomTabbedPage.Platform.Droid;targetPlatform=Android"
+    droid:TabbedPageBehavior.BackgroundColor="#9C27B0" 
+    droid:TabbedPageBehavior.FontSize="0"
+    droid:TabbedPageBehavior.IconSize="24"
+    droid:TabbedPageBehavior.ItemSpacing="4"
+    droid:TabbedPageBehavior.BottomBarHeight="56">
 	<TabbedPage.Children>
         <local:Tab1Page/>
         <local:Tab2Page/>
