@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Complying with Apache Licence Version 2.0 that the original version of this has been distributed I declare herewith that this file-->
-<!--has been modified by me, Marc Lohrer: I added the setting of BackgroundColor, FontSize, IconSize, ItemSpacing, BottomBarHeight for Android.-->
+<!--has been modified by me, Marc Lohrer: I added the setting of BackgroundColor, FontSize, IconSize, ItemSpacing, BottomBarHeight, ItemTextColor, ItemIconTintList for Android.-->
 <TabbedPage 
     xmlns="http://xamarin.com/schemas/2014/forms"  
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -11,7 +11,9 @@
     droid:TabbedPageBehavior.FontSize="0"
     droid:TabbedPageBehavior.IconSize="24"
     droid:TabbedPageBehavior.ItemSpacing="4"
-    droid:TabbedPageBehavior.BottomBarHeight="56">
+    droid:TabbedPageBehavior.BottomBarHeight="56"
+    droid:TabbedPageBehavior.ItemTextColor="#8B0000,#FFFFFF"
+    droid:TabbedPageBehavior.ItemIconTintList="#8B0000,#FFFFFF">
 	<TabbedPage.Children>
         <local:Tab1Page/>
         <local:Tab2Page/>

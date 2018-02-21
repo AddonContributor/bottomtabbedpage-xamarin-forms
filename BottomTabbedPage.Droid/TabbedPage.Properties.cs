@@ -6,6 +6,7 @@
 * I added this file and all of its content.
 */
 using System;
+using System.Collections.Generic;
 using Naxam.Controls.Droid;
 using Xamarin.Forms;
 
@@ -194,6 +195,114 @@ namespace Naxam.Controls.Platform.Droid
             if (newValue != null && oldValue != newValue)
             {
                 BottomTabbedRenderer.BottomBarHeight = Convert.ToSingle(newValue);
+            }
+        }
+
+        #endregion
+
+        #region ItemTextColor
+
+        static string defaultItemTextColor = "#00008C,#FFFFFF";
+
+        public static readonly BindableProperty ItemTextColorProperty =
+            BindableProperty.CreateAttached(
+                "ItemTextColor",
+                typeof(string),
+                typeof(TabbedPage),
+                defaultItemTextColor,
+                propertyChanged: OnItemTextColorChanged);
+
+        public static string GetItemTextColor(BindableObject view)
+        {
+            return (string)view.GetValue(ItemTextColorProperty);
+        }
+
+        public static void SetItemTextColor(BindableObject view, string value)
+        {
+            List<int> colorList = StringToColorStateList(value);
+            var resource = new Android.Content.Res.ColorStateList(
+                new int[][] {
+                new int[] { Android.Resource.Attribute.StateChecked},
+                new int[] { Android.Resource.Attribute.StateEnabled}}, colorList.ToArray());
+            view.SetValue(ItemTextColorProperty, resource);
+        }
+
+        private static List<int> StringToColorStateList(string value)
+        {
+            var colorHexList = value.Split(',');
+            var colorList = new List<int>();
+            foreach (var colorHex in colorHexList)
+            {
+                colorList.Add(Android.Graphics.Color.ParseColor(colorHex));
+            }
+
+            return colorList;
+        }
+
+        static void OnItemTextColorChanged(BindableObject view, object oldValue, object newValue)
+        {
+            var tabbedPage = view as TabbedPage;
+            if (tabbedPage == null)
+            {
+                return;
+            }
+
+            if (newValue != null && oldValue != newValue)
+            {
+                var colorList = StringToColorStateList(newValue as string);
+                var resource = new Android.Content.Res.ColorStateList(
+                new int[][] {
+                    new int[] { Android.Resource.Attribute.StateChecked},
+                    new int[] { Android.Resource.Attribute.StateEnabled}}, colorList.ToArray());
+                BottomTabbedRenderer.ItemTextColor = resource;
+            }
+        }
+
+        #endregion
+
+        #region ItemIconTintList
+
+        static string defaultItemIconTintList = "8F0000,#FFFFFF";
+
+        public static readonly BindableProperty ItemIconTintListProperty =
+            BindableProperty.CreateAttached(
+                "ItemIconTintList",
+                typeof(string),
+                typeof(TabbedPage),
+                defaultItemIconTintList,
+                propertyChanged: OnItemIconTintListChanged);
+
+        public static string GetItemIconTintList(BindableObject view)
+        {
+            return (string)view.GetValue(ItemIconTintListProperty);
+        }
+
+        public static void SetItemIconTintList(BindableObject view, string value)
+        {
+            List<int> colorList = StringToColorStateList(value);
+            var resource = new Android.Content.Res.ColorStateList(
+                new int[][] {
+                new int[] { Android.Resource.Attribute.StateChecked},
+                new int[] { Android.Resource.Attribute.StateEnabled}}, colorList.ToArray());
+            view.SetValue(ItemIconTintListProperty, resource);
+        }
+
+        static void OnItemIconTintListChanged(BindableObject view, object oldValue, object newValue)
+        {
+            var tabbedPage = view as TabbedPage;
+            if (tabbedPage == null)
+            {
+                return;
+            }
+
+            if (newValue != null && oldValue != newValue)
+            {
+                var colorList = StringToColorStateList(newValue as string);
+                var resource = new Android.Content.Res.ColorStateList(
+                new int[][] {
+                    new int[] { Android.Resource.Attribute.StateChecked},
+                    new int[] { Android.Resource.Attribute.StateEnabled}}, colorList.ToArray());
+                BottomTabbedRenderer.ItemIconTintList = resource;
             }
         }
 
