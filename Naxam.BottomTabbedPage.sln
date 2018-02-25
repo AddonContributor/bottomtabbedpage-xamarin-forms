@@ -94,4 +94,10 @@ Global
 		{98E4BF61-0B7E-4F8F-A599-78235D272669} = {27C2731C-B6B4-4015-8DD5-F795AC5B1AE1}
 		{ED7EB8E6-2646-471A-A52A-DF93E30F0619} = {27C2731C-B6B4-4015-8DD5-F795AC5B1AE1}
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = @/*\n* Complying with Apache Licence Version 2.0 that the original version of this \n* has been distributed I declare herewith that this file has been modified by\n* me, $(AuthorName).\n* \n* The change added a new class called BottomTabbedConfiguration that is used to \n* configure how the BottomTabbedRenderer renders the buttons of the TabbedPage.\n* \n* I changed: \n*/
+		$0.VersionControlPolicy = $2
+	EndGlobalSection
 EndGlobal
