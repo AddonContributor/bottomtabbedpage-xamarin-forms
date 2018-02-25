@@ -7,6 +7,7 @@
 * 
 * I removed a comment.
 * I removed the command that changed the value of properties BackgroundColor, FontSize, IconSize, ItemSpacing, BottomBarHeight, ItemTextColor, ItemIconTintList
+* I now set Typeface architep.ttf and ItemPadding to 5 explicitly
 */
 
 using Android.App;
@@ -48,9 +49,9 @@ namespace Naxam.Demo.Droid
                     Color.White //Normal
                 });
 
-			//BottomTabbedRenderer.Typeface = Typeface.CreateFromAsset(this.Assets, "architep.ttf");
+			BottomTabbedRenderer.Typeface = Typeface.CreateFromAsset(this.Assets, "architep.ttf");
 			BottomTabbedRenderer.ItemBackgroundResource = Resource.Drawable.bnv_selector;
-			//BottomTabbedRenderer.ItemPadding = new Xamarin.Forms.Thickness(5);
+			BottomTabbedRenderer.ItemPadding = new Xamarin.Forms.Thickness(5);
 			BottomTabbedRenderer.ItemAlign = ItemAlignFlags.Center;
 			BottomTabbedRenderer.MenuItemIconSetter = (menuItem, iconSource, selected) => {
                 var resId = Resources.GetIdentifier(iconSource.File, "drawable", PackageName);
